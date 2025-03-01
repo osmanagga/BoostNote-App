@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './components/App'
 import './lib/i18n'
+import './lib/initMock'
 import { RouterProvider } from './lib/router'
 import { ElectronProvider } from './lib/stores/electron'
 

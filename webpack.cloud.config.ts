@@ -127,10 +127,7 @@ module.exports = (env, argv) => {
 
       before: function (app, server) {
         app.use((req, res, next) => {
-          res.setHeader(
-            'Access-Control-Allow-Origin',
-            process.env.BOOST_HUB_BASE_URL
-          )
+          res.setHeader('Access-Control-Allow-Origin', '*')
           res.setHeader(
             'Access-Control-Allow-Methods',
             'OPTIONS, GET, POST, PUT, PATCH, DELETE'
